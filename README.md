@@ -38,19 +38,28 @@ memoria
 
 ### 5. ¿Cuáles de los siguientes elementos son propios de la POA?
 
-   El balanceo de carga es la distribución equitativa del trabajo entre múltiples núcleos o procesadores en un sistema paralelo. Es crucial para maximizar el rendimiento, ya que evita que algunos núcleos estén sobrecargados mientras otros están inactivos, logrando así una ejecución más eficiente y tiempos de respuesta más rápidos.
+   Opcion : 
+   b.	Puntos de corte, tejedores, puntos de enlace.
+
+   Justificacion :
 
 
 
-### 6. ¿Qué es una “condición de carrera” y cómo afecta a la programación paralela?
+### 6. Una incumbencia transversal o ‘crosscutting concern’ es:
 
-   Una condición de carrera ocurre cuando dos o más hilos acceden y modifican una variable compartida al mismo tiempo, lo que lleva a resultados inconsistentes o indeterminados. Este problema afecta a la programación paralela, ya que puede provocar errores difíciles de detectar y depurar, afectando la confiabilidad del programa.
+   Opcion : 
+   c.	La conceptualización de responsabilidades de uso común en un sistema
 
-### 7. ¿Cuál es la diferencia entre memoria compartida y paso de mensajes en paralelismo?
+   Justificacion : 
+
+### 7. En un banco se desea aplicar el concepto de la programación orientada a aspectos, un aspecto que se podría abstraer sería:
  
-   En memoria compartida, los hilos o procesos tienen acceso a la misma área de memoria para intercambiar información, mientras que en el paso de mensajes, los procesos se comunican enviando mensajes entre sí sin compartir memoria. La memoria compartida es rápida pero puede causar condiciones de carrera, mientras que el paso de mensajes es más seguro para evitar interferencias, aunque puede ser menos eficiente.
+   Opcion : 
+   b.	La validación de una transacción de un cliente o empleado del banco.
 
-### 8. Define el término “overhead” en el contexto de paralelismo.
+   Justificacion : 
+
+### 8. ¿Qué se define en un consejo?
 
    En el contexto de paralelismo, el "overhead" se refiere al tiempo y recursos adicionales necesarios para gestionar la paralelización, como la creación de hilos, la sincronización y la comunicación entre ellos. Un alto overhead puede reducir los beneficios del paralelismo si consume una cantidad significativa de recursos.
 
