@@ -5,10 +5,8 @@
 
 ### 1. ¿Qué es paralelismo y cómo se diferencia de la concurrencia?
 
-   El paralelismo es una técnica en la que varias tareas se ejecutan simultáneamente en múltiples núcleos o procesadores físicos. 
-La idea es dividir un problema en subproblemas independientes y procesarlos al mismo tiempo para reducir el tiempo de ejecución. En cambio, la concurrencia es un concepto más amplio que permite que múltiples tareas progresen al mismo tiempo, aunque no necesariamente se ejecuten simultáneamente. En concurrencia, las tareas pueden intercalarse en un único procesador, alternando su ejecución para dar la impresión de que avanzan al mismo tiempo. 
-
-La diferencia principal es que el paralelismo requiere múltiples núcleos o procesadores para ejecutar tareas al mismo tiempo, mientras que la concurrencia se puede lograr en un solo núcleo.
+ Opcion :
+ c.	Separar conceptos y minimizar las dependencias entre ellos
 
 ### 2. ¿Cuál es el propósito principal del paralelismo en sistemas informáticos?
 
