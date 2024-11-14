@@ -3,7 +3,7 @@
 ## Samuel Leyton Muñoz - Taller Paradigma Aspectos
 
 
-### 1. ¿Qué es paralelismo y cómo se diferencia de la concurrencia?
+### 1. En pocas palabras, el objetivo principal de la POA es:
 
  Opcion :
  c.	Separar conceptos y minimizar las dependencias entre ellos
@@ -11,7 +11,7 @@
  Justificacion : 
  
 
-### 2. ¿Cuál es el propósito principal del paralelismo en sistemas informáticos?
+### 2. ¿Cuál es el inconveniente que se presenta al usar las metodologías iterativas y POO?
 
    Opcion : 
    b.	No se considera el tratamiento de aspectos como seguridad y gestión de
@@ -20,9 +20,12 @@ memoria
    Justificacion : 
    
 
-### 3. ¿Qué es un núcleo de procesamiento en el contexto de paralelismo?
+### 3. ¿Cuál de las siguientes opciones no es uno de los inconvenientes que se presentan al implementar la POA?
 
-   Un núcleo de procesamiento es una unidad de procesamiento dentro de un procesador que puede ejecutar instrucciones de manera independiente. En el contexto de paralelismo, los núcleos permiten que múltiples tareas se ejecuten al mismo tiempo, ya que cada núcleo puede manejar su propio conjunto de instrucciones. Más núcleos significan más capacidad para procesar tareas en paralelo.
+  Opcion : 
+  d.	Posibles choques entre los aspectos
+
+  Justificacion : 
 
 ### 4. ¿Qué significa que una operación sea “thread-safe” en programación paralela?
 
