@@ -134,7 +134,7 @@ memoria
 
 ### Ejercicio de implementación 
 
-```kotlin
+```python 
 import kotlinx.coroutines.*
 import java.util.concurrent.RecursiveTask
 import java.util.concurrent.ForkJoinPool
