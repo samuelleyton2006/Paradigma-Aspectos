@@ -1,16 +1,22 @@
-# Taller Paralelismo
+# Taller Aspectos 
 
-## Santiago Ruiz Rangel - Paradigmas de programación 
+## Samuel Leyton Muñoz - Taller Paradigma Aspectos
 
 
 ### 1. ¿Qué es paralelismo y cómo se diferencia de la concurrencia?
 
  Opcion :
  c.	Separar conceptos y minimizar las dependencias entre ellos
+ Justificacion : 
+ 
 
 ### 2. ¿Cuál es el propósito principal del paralelismo en sistemas informáticos?
 
-   El propósito principal del paralelismo en sistemas informáticos es mejorar el rendimiento y reducir el tiempo de procesamiento de tareas complejas, especialmente en sistemas que manejan grandes volúmenes de datos o requieren cálculos intensivos. Al dividir las tareas en partes más pequeñas y ejecutarlas simultáneamente, el paralelismo permite que los sistemas aprovechen mejor los recursos de hardware y completen tareas más rápido que si se ejecutaran secuencialmente. Esto es especialmente útil en aplicaciones como el procesamiento de datos, simulaciones científicas, inteligencia artificial y gráficos por computadora.
+   Opcion : 
+   b.	No se considera el tratamiento de aspectos como seguridad y gestión de
+memoria
+   Justificacion : 
+   
 
 ### 3. ¿Qué es un núcleo de procesamiento en el contexto de paralelismo?
 
