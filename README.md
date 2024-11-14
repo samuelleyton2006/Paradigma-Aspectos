@@ -27,13 +27,16 @@ memoria
 
   Justificacion : 
 
-### 4. ¿Qué significa que una operación sea “thread-safe” en programación paralela?
+### 4. ¿En qué consiste el código mezclado (Code Tangling)?
 
-   Una operación es "thread-safe" si puede ser ejecutada de forma segura por múltiples hilos (threads) al mismo tiempo sin provocar condiciones de carrera ni resultados indeterminados. Esto suele lograrse usando mecanismos de sincronización, como bloqueos (locks), para asegurar que solo un hilo acceda a recursos compartidos en un momento dado.
+   Opcion : 
+   a.	Varios requerimientos pueden estar dentro de un mismo módulo.
+
+   Justificacion : 
 
 
 
-### 5. Define el concepto de “balanceo de carga” y su importancia en sistemas paralelos. 
+### 5. ¿Cuáles de los siguientes elementos son propios de la POA?
 
    El balanceo de carga es la distribución equitativa del trabajo entre múltiples núcleos o procesadores en un sistema paralelo. Es crucial para maximizar el rendimiento, ya que evita que algunos núcleos estén sobrecargados mientras otros están inactivos, logrando así una ejecución más eficiente y tiempos de respuesta más rápidos.
 
