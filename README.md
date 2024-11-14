@@ -68,9 +68,9 @@ memoria
 
    
 
-### 9. ¿Qué es un “deadlock” y cómo puede ocurrir en sistemas paralelos? 
+### 9. La Programación Orientada a Aspectos (POA) es un paradigma cuya intención es permitir 
 
-   Un deadlock (bloqueo mutuo) ocurre cuando dos o más hilos o procesos esperan indefinidamente por recursos que están siendo retenidos mutuamente. En sistemas paralelos, puede suceder cuando un proceso bloquea un recurso que otro necesita y viceversa, provocando que ambos se queden en un estado de espera sin poder continuar.
+   Opcion : 
 
 ### 10. ¿Cuál es el rol de un “scheduler” en la administración de tareas en paralelismo? 
 
