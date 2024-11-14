@@ -68,13 +68,18 @@ memoria
 
    
 
-### 9. La Programación Orientada a Aspectos (POA) es un paradigma cuya intención es permitir 
+### 9. La Programación Orientada a Aspectos (POA) es un paradigma cuya intención es permitir una adecuada _____________ de las aplicaciones, posibilitando mejor separación de incumbencias.
 
    Opcion : 
+   b.	Modularización
 
-### 10. ¿Cuál es el rol de un “scheduler” en la administración de tareas en paralelismo? 
+   Justificacion : 
 
-Un "scheduler" (planificador) es el componente encargado de asignar y gestionar la ejecución de tareas o hilos en los núcleos de procesamiento. En paralelismo, el scheduler optimiza la distribución de tareas, decide cuándo y dónde ejecutar cada tarea, y gestiona la prioridad y los recursos para maximizar el rendimiento del sistema y evitar conflictos.
+   
+
+### 10.De los siguientes términos, ¿cuál está relacionado con la POA?
+
+   Opcion : 
 
 
 ### 11. Describe cómo el paralelismo puede mejorar el rendimiento de un programa. Da un ejemplo general. 
