@@ -33,7 +33,7 @@ memoria
    a.	Varios requerimientos pueden estar dentro de un mismo módulo.
 
    Justificacion : 
-
+   
 
 
 ### 5. ¿Cuáles de los siguientes elementos son propios de la POA?
