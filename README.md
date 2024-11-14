@@ -80,27 +80,10 @@ memoria
 ### 10.De los siguientes términos, ¿cuál está relacionado con la POA?
 
    Opcion : 
+   d.	Tejedor
 
-
-### 11. Describe cómo el paralelismo puede mejorar el rendimiento de un programa. Da un ejemplo general. 
-
-   El paralelismo mejora el rendimiento de un programa al dividir una tarea compleja en sub-tareas más pequeñas que pueden ejecutarse simultáneamente en varios núcleos o procesadores. Esto reduce el tiempo total de ejecución en comparación con la ejecución secuencial.  
-   **Ejemplo:** En el procesamiento de una gran cantidad de datos, como una imagen para aplicar filtros, cada sección de la imagen puede procesarse en paralelo, permitiendo que el procesamiento completo se realice mucho más rápido.
-
-### 12. Explica qué es una “condición de carrera” y proporciona un ejemplo de cómo podría ocurrir. 
-
-   Una "condición de carrera" ocurre cuando el resultado de un programa depende del orden en el que se ejecutan los hilos o procesos, lo cual no es controlado ni garantizado. Esto sucede cuando dos o más hilos acceden y modifican una variable compartida sin la adecuada sincronización, llevando a resultados inconsistentes.  
-   **Ejemplo:** Dos hilos intentan incrementar el valor de una misma variable. Si ambos leen el valor inicial al mismo tiempo, lo incrementan y lo almacenan, el resultado final puede ser incorrecto, ya que ambos escribieron el mismo valor sin considerar el incremento del otro.
-
-### 13. ¿Por qué es importante la sincronización en programación paralela? Menciona alguna técnica de sincronización.
-
-   La sincronización es crucial para evitar condiciones de carrera y garantizar la consistencia de los datos compartidos entre hilos. Sin sincronización, el acceso concurrente a los recursos puede llevar a errores y resultados impredecibles.  
-   Técnica de sincronización: Los bloqueos o "locks" son una técnica común que permite que solo un hilo acceda a una sección crítica del código a la vez, asegurando así que las operaciones se realicen en orden y sin interferencias.
-
-### 14. Describe los posibles efectos del “overhead” en la ejecución de tareas en paralelo. 
-
-   El "overhead" en la ejecución de tareas paralelas se refiere a los recursos adicionales y tiempo que se emplean en la creación, sincronización y gestión de hilos o procesos. Si el overhead es muy alto, puede reducir los beneficios de la paralelización, ya que el tiempo de administración supera las mejoras en el tiempo de ejecución. Esto es especialmente notable en tareas pequeñas, donde el tiempo de coordinación es comparable o incluso mayor que el tiempo de ejecución de la tarea misma.
-
+   Justificacion : 
+   
 
 ### 15. Explica cómo se pueden evitar los deadlocks en un sistema paralelo.  
 
