@@ -6,6 +6,7 @@
 ### 1. En pocas palabras, el objetivo principal de la POA es:
 
  Opcion :
+ 
  c.	Separar conceptos y minimizar las dependencias entre ellos
  
  Justificacion : 
