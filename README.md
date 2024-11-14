@@ -7,6 +7,7 @@
 
  Opcion :
  c.	Separar conceptos y minimizar las dependencias entre ellos
+ 
  Justificacion : 
  
 
@@ -15,6 +16,7 @@
    Opcion : 
    b.	No se considera el tratamiento de aspectos como seguridad y gestión de
 memoria
+
    Justificacion : 
    
 
