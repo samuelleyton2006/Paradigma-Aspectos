@@ -61,7 +61,12 @@ memoria
 
 ### 8. ¿Qué se define en un consejo?
 
-   En el contexto de paralelismo, el "overhead" se refiere al tiempo y recursos adicionales necesarios para gestionar la paralelización, como la creación de hilos, la sincronización y la comunicación entre ellos. Un alto overhead puede reducir los beneficios del paralelismo si consume una cantidad significativa de recursos.
+   Opcion : 
+   b.	El código que debe ser ejecutado en los puntos de unión
+
+   Justificacion : 
+
+   
 
 ### 9. ¿Qué es un “deadlock” y cómo puede ocurrir en sistemas paralelos? 
 
