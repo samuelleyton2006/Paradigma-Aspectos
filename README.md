@@ -4,15 +4,13 @@
 
 
 ### 1. En pocas palabras, el objetivo principal de la POA es:
-&#160;
-&#160;
-&#160;
-&#160;
  Opcion :
  
  c.	Separar conceptos y minimizar las dependencias entre ellos
  
  Justificacion : 
+
+ Esta centrado en separar los conceptos que significan lo mismo que los aspectos , esto mejora la modularidad y de esta manera lo que se trata es de evitar las dependencias las cuales pueden o ser muy extensas o ademas de eso evitar que los programas tengan errores que pueden ser causados por la sobrecarga . Con la POA generamos moludaridad y recorta el uso de dependencias lo cual nos da como resultado una mejor seguridad , no tocar el codigo principal y que de esta manera no sea afectado .
  
 
 ### 2. ¿Cuál es el inconveniente que se presenta al usar las metodologías iterativas y POO?
@@ -22,6 +20,8 @@
 memoria
 
    Justificacion : 
+
+   
    
 
 ### 3. ¿Cuál de las siguientes opciones no es uno de los inconvenientes que se presentan al implementar la POA?
@@ -31,12 +31,16 @@ memoria
 
   Justificacion : 
 
+  La programacion orientada a aspectos se tiende a estructurar de una manera modular entre los difernetes aspectos lo cual evita los choques entre aspectos .
+
 ### 4. ¿En qué consiste el código mezclado (Code Tangling)?
 
    Opcion : 
    a.	Varios requerimientos pueden estar dentro de un mismo módulo.
 
    Justificacion : 
+
+   El codigo mezclado es aquel modulo que tiene diferentes requerimientos y funciones . El problema de este codigo es que no es tan sencillo hacer la separacion de los aspectos y sus propias debilidades o problemas . Este tipo de problemas siempre tratan de estar lejos de la programacion orientada a eventos ya que el principal objetivo de la programaicon orientada a eventos es que sea mas sencilla y sus funcionalidades se puedan dividir . En estos programas tan complejos es mejor tratar otros metodos .
    
 
 
