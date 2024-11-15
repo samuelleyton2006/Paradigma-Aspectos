@@ -76,7 +76,9 @@ memoria
 
    Justificacion : 
 
-   
+   La programacion orientada a aspectos esta especificamente diseñada para desarrollarse de manera modular o una manera en la cual los diferentes problemas que afectan al sistema .
+
+   Como ejemplo de esto podria ser : 
 
 ### 10.De los siguientes términos, ¿cuál está relacionado con la POA?
 
