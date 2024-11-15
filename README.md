@@ -90,41 +90,13 @@ memoria
    d.	Tejedor
 
    Justificacion : 
+
+   - El tejedor se basa de manera concisa en el procedimiento que se utiliza el codigo fuente o codigo base del programa con los diferentes aspectos que se creen . Crea puntos de interes o tambien llamadas preocupaciones en problemas transversales los cuales buscan otra solucion .
    
 
-
-   Para evitar deadlocks, se pueden emplear varias estrategias, como:
-   - Evitar la espera circular: asignar recursos en un orden definido y exigir que los procesos soliciten recursos en ese orden, previniendo que formen un ciclo de espera.
-   - Asignación preventiva de recursos: asignar todos los recursos necesarios a un proceso antes de que comience, asegurando que no necesite esperar.
-   - Desbloqueo de procesos (time-out): establecer un límite de tiempo para que un proceso obtenga recursos; si no lo consigue, libera los recursos asignados y vuelve a intentarlo.
-   - Evitar la retención de recursos: hacer que los procesos liberen recursos antes de solicitar otros, reduciendo las dependencias entre ellos.
-
  
 
-   - Ventajas de la memoria compartida:  
-
- - Mayor velocidad de comunicación, ya que los hilos acceden directamente a los datos en memoria sin necesidad de transferirlos.
- 	- Menor latencia en el acceso a datos, ya que se evita el envío de mensajes.
-   - Desventajas de la memoria compartida:  
- 	- Necesidad de sincronización para evitar condiciones de carrera, lo que añade complejidad.
- 	- Mayor riesgo de errores y deadlocks si no se manejan adecuadamente los accesos concurrentes.
-
-   - Ventajas del paso de mensajes:  
-
- 	- Mayor aislamiento entre procesos, lo que reduce el riesgo de interferencias y condiciones de carrera.
- 	- Mejor escalabilidad en sistemas distribuidos, ya que los procesos no dependen de un área de memoria compartida.
-   - Desventajas del paso de mensajes:  
- 	- Mayor latencia y overhead en la comunicación, especialmente si los mensajes deben enviarse a través de una red.
- 	- Mayor complejidad para diseñar protocolos de comunicación eficiente entre procesos.
-
-
- 
-   - Asignación estática: las tareas se asignan a núcleos específicos al inicio y no cambian durante la ejecución, reduciendo el overhead pero menos adaptable a cambios de carga.
-   - Asignación dinámica: las tareas se asignan a los núcleos de forma dinámica durante la ejecución, lo que permite una mayor flexibilidad y mejor respuesta a variaciones en la carga.
-   - Balanceo de carga dinámico: los núcleos se supervisan en tiempo real y las tareas se reasignan para equilibrar la carga, optimizando el uso de recursos.
-   - Asignación basada en afinidad: asigna tareas a núcleos que previamente procesaron datos relacionados, optimizando el rendimiento al aprovechar la memoria caché.
-
-
+     
    En un servidor web que maneja un alto volumen de solicitudes de usuarios, el balanceo de carga es esencial para distribuir las solicitudes entre múltiples procesadores o servidores. Si una parte del sistema se sobrecarga mientras otras están inactivas, el tiempo de respuesta aumentará y los usuarios experimentarán retrasos. El balanceo de carga garantiza que todas las solicitudes se distribuyan de manera equitativa, optimizando los tiempos de respuesta y utilizando los recursos de manera eficiente.
 
 
