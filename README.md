@@ -79,7 +79,8 @@ memoria
    La programacion orientada a aspectos esta especificamente diseñada para desarrollarse de manera modular o una manera en la cual los diferentes problemas que afectan al sistema .
 
    Como ejemplo de esto podria ser : 
-    - En sistemas de seguridad principalmente basados en usuarios individuales que confian su seguridad en el prestador de servicio el cual le confian su informacion , lo que las empresas hacen es fraccionar el problema y las diferentes gestiones en el Logging de manera no centrica. 
+   
+   - En sistemas de seguridad principalmente basados en usuarios individuales que confian su seguridad en el prestador de servicio el cual le confian su informacion , lo que las empresas hacen es fraccionar el problema y las diferentes gestiones en el Logging de manera no centrica. 
     La programacion orientada a aspectos lo que busca es dividir los problemas de seguridad para que el manejo de errores sea mayor y sencillo . 
     La programacion orientada a aspectos es sencilla en cuestion visual y algo compleja en cuestion de conexion con los diferentes aspectos en que se puede basar un programa o sistema . Aunque al ser modular su mantenimiento y resolucion de bugs o errores se soluciona de manera mas directa y los errores son faciles de encontrar.
 
