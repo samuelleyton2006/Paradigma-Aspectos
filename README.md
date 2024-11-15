@@ -22,7 +22,9 @@
 memoria
 
    Justificacion : 
+Los problemas de la rprogrmacion orientada a objetos y iterativa es que son debiles en la utilizacion de memoria y en la seguridad que pueden tener sus sistemas en cuestion de carga de datos .
 
+Para poder gestionar esos aspectos en la programacion orientada a eventos es necesario el agregar mas clases y objetos los cuales implican mas gestion y modificacion para mantener la aplicacion .
    
    
 
@@ -87,6 +89,8 @@ memoria
    b.	La validación de una transacción de un cliente o empleado del banco.
 
    Justificacion : 
+
+   No esta limitada a una clase o metodo . No mezcla el codigo fuente con los puntos de flujo .
 
 ### 8. ¿Qué se define en un consejo?
 
