@@ -77,6 +77,9 @@ memoria
 
    Justificacion : 
 
+   Esto es cuandoi se encuentran aspectos los cuales pueden afectar de alguna manera en una faceta del sistema . Por ejemplo puede ser algun aspecto el cual solucione diferentes vulnerabilidades de seguridad .Se implementa en modulos de un solo aspecto o diferentes modulos para una misma faceta .
+   
+
 ### 7. En un banco se desea aplicar el concepto de la programación orientada a aspectos, un aspecto que se podría abstraer sería:
  
    Opcion : 
