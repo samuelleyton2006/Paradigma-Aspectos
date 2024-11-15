@@ -56,6 +56,13 @@ memoria
 
    Justificacion :
 
+   Los puntos de corte son aquellos en los cuales se aplica principalmente los aspectos como por ejemplo : 
+    - Creacion de objetos 
+    - Llamando a un metodo 
+    - Cuando se esta ejecutando un metodo 
+   Los tejedores son aquellas conexiones entre los aspectos y el lugar donde se apliquen junto con el codigo fuente .
+   Los puntos de enlace es el momento en el que se integran los aspectos dentro del propio flujo de el codigo .
+
 
 
 ### 6. Una incumbencia transversal o ‘crosscutting concern’ es:
