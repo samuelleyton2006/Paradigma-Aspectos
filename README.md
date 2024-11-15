@@ -4,6 +4,7 @@
 
 
 ### 1. En pocas palabras, el objetivo principal de la POA es:
+
  Opcion :
  
  c.	Separar conceptos y minimizar las dependencias entre ellos
@@ -16,6 +17,7 @@
 ### 2. ¿Cuál es el inconveniente que se presenta al usar las metodologías iterativas y POO?
 
    Opcion : 
+   
    b.	No se considera el tratamiento de aspectos como seguridad y gestión de
 memoria
 
@@ -27,6 +29,7 @@ memoria
 ### 3. ¿Cuál de las siguientes opciones no es uno de los inconvenientes que se presentan al implementar la POA?
 
   Opcion : 
+  
   d.	Posibles choques entre los aspectos
 
   Justificacion : 
@@ -36,6 +39,7 @@ memoria
 ### 4. ¿En qué consiste el código mezclado (Code Tangling)?
 
    Opcion : 
+   
    a.	Varios requerimientos pueden estar dentro de un mismo módulo.
 
    Justificacion : 
@@ -47,6 +51,7 @@ memoria
 ### 5. ¿Cuáles de los siguientes elementos son propios de la POA?
 
    Opcion : 
+   
    b.	Puntos de corte, tejedores, puntos de enlace.
 
    Justificacion :
@@ -56,6 +61,7 @@ memoria
 ### 6. Una incumbencia transversal o ‘crosscutting concern’ es:
 
    Opcion : 
+   
    c.	La conceptualización de responsabilidades de uso común en un sistema
 
    Justificacion : 
@@ -63,6 +69,7 @@ memoria
 ### 7. En un banco se desea aplicar el concepto de la programación orientada a aspectos, un aspecto que se podría abstraer sería:
  
    Opcion : 
+   
    b.	La validación de una transacción de un cliente o empleado del banco.
 
    Justificacion : 
@@ -70,6 +77,7 @@ memoria
 ### 8. ¿Qué se define en un consejo?
 
    Opcion : 
+   
    b.	El código que debe ser ejecutado en los puntos de unión
 
    Justificacion : 
@@ -92,6 +100,7 @@ memoria
 ### 9. La Programación Orientada a Aspectos (POA) es un paradigma cuya intención es permitir una adecuada _____________ de las aplicaciones, posibilitando mejor separación de incumbencias.
 
    Opcion : 
+   
    b.	Modularización
 
    Justificacion : 
@@ -107,6 +116,7 @@ memoria
 ### 10.De los siguientes términos, ¿cuál está relacionado con la POA?
 
    Opcion : 
+   
    d.	Tejedor
 
    Justificacion : 
