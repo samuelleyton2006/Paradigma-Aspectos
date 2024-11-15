@@ -67,6 +67,19 @@ memoria
 
    Justificacion : 
 
+   Los consejos se aplican en los puntos de union , las uniones son : 
+
+   - Cuando se llama un metodo
+   - Momento de ejecucion de algun metodo
+   - El momento de crear objetos
+
+   Se aplican en estos puntos ya que estos arreglos o consejos se deben ejecutar en un momento preciso . Funcional principalmente para generar funciones transversales (que no son dependientes en la mayoria de casos , de las funciones ).
+   Como ejemplo de esto les puedo dar : 
+   - La gestion de transacciones
+   - cuestiones de creacion de usuarios y contraseñas
+
+ Esto se hace para que estas creaciones o modificaciones dentro del sistema no afecten directamente a el codigo fuente o base . Evitan vulnerabilidades comunes o sencillas  .
+
    
 
 ### 9. La Programación Orientada a Aspectos (POA) es un paradigma cuya intención es permitir una adecuada _____________ de las aplicaciones, posibilitando mejor separación de incumbencias.
