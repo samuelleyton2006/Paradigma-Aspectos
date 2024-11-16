@@ -224,11 +224,10 @@ Tengo tanto a un usuario comun el cual no cuenta con acciones dentro del sistema
 
 ![Ejemplo de imagen](RecursosReadme/Ejemplo.png "Ejemplo de tooltip")
 
+# Extra
+
+El mejor sistema de seguridad conocido aunque no muy universal y con un requerimiento para ser multiplataforma es RUST .
+
+Por ello hice un programa hecho en rust que actua similar y esta reforzado en fuerza para ataques de sobrecarga de datos 
 
 
-
-### Conclusión
-
-Secuencial: Suficiente para listas pequeñas. <br>
-Corrutinas: Adecuado para tamaños de listas medianas o en sistemas con pocos núcleos. <br>
-ForkJoinPool: Recomendado para listas grandes y sistemas multicore. <br>
