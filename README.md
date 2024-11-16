@@ -151,7 +151,7 @@ Para poder gestionar esos aspectos en la programacion orientada a eventos es nec
 ```python 
 class SistemaUsuarios:
     def __init__(self):
-        # Lista de usuarios permitidos
+        
         self.usuarios_permitidos = ["Jhonatan", "Miguel", "Paula", "Edgar"]
 
     def decorador_seguridad(func):
@@ -169,7 +169,7 @@ class SistemaUsuarios:
 
     @decorador_seguridad
     def agregar_usuario(self, admin, nuevo_usuario):
-        # Solo los administradores pueden agregar usuarios
+        # Se estipula que los usuarios determinados como "admin " o administradores son aquellos que pueden agregar a alguien mas o pueden dejarlos acceder en la consola 
         if admin in self.usuarios_permitidos:
             if nuevo_usuario not in self.usuarios_permitidos:
                 self.usuarios_permitidos.append(nuevo_usuario)
@@ -208,11 +208,11 @@ sistema.agregar_usuario("Carlos", "Luna")
 sistema.listar_usuarios("Paula")  
 
 
-sistema.eliminar_usuario("Paula", "Carlos")  # Usuario 'Carlos' eliminado correctamente por Paula.
-sistema.eliminar_usuario("Carlos", "Luna")   # Carlos no tiene permiso para eliminar usuarios.
+sistema.eliminar_usuario("Paula", "Carlos")  
+sistema.eliminar_usuario("Carlos", "Luna")   
 
 
-sistema.listar_usuarios("Paula")  # Usuarios permitidos: ['Jhonatan', 'Miguel', 'Paula', 'Edgar']
+sistema.listar_usuarios("Paula")  
 ```
 ## Análisis de Comparación de Tiempos
 
