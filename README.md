@@ -222,42 +222,11 @@ Tengo tanto a un usuario comun el cual no cuenta con acciones dentro del sistema
 
 ### codigo 
 
-Este método recorre toda la lista de números y suma cada elemento de manera secuencial.
-Este método actúa como un punto de referencia. Como es secuencial, su tiempo de ejecución será el más alto en la mayoría de los casos, especialmente para listas grandes (1,000,000 de elementos en este caso).
-Tiempo esperado: Mayor tiempo debido a la falta de paralelización.
+![Ejemplo de imagen](RecursosReadme/Ejemplo.png "Ejemplo de tooltip")
 
-### Implementación Paralela con Corrutinas:
 
-Este método divide la lista en 4 partes iguales y usa una corrutina para calcular la suma de cada parte en paralelo.
-Las corrutinas son ligeras y no crean hilos adicionales a menos que sea necesario, lo que reduce la sobrecarga de gestión de hilos.
-Ventajas: Las corrutinas son adecuadas para procesamiento concurrente con poco overhead, siendo una buena opción en sistemas con pocos núcleos.
-Desventajas: La paralelización se limita a 4 corrutinas, lo que podría no aprovechar al máximo los recursos en sistemas con muchos núcleos.
-Tiempo esperado: Generalmente menor que la implementación secuencial, pero puede ser menos eficiente que ForkJoinPool en sistemas multicore.
 
-### Implementación Paralela con ForkJoinPool:
 
-Utiliza el patrón divide y vencerás para dividir la lista en partes cada vez más pequeñas hasta un tamaño mínimo (250,000 en este caso).
-ForkJoinPool es altamente eficiente para tareas que pueden dividirse en subtareas recursivas, optimizando la gestión de hilos en sistemas multicore.
-Ventajas: Ideal para listas grandes en sistemas con múltiples núcleos, debido a su paralelización profunda y administración eficiente de tareas.
-Desventajas: Puede ser menos eficiente para listas pequeñas debido a la sobrecarga de gestionar la estructura de tareas.
-Tiempo esperado: Generalmente el tiempo más bajo en sistemas multicore, aprovechando la paralelización y optimización de recursos.
-
-## Ejemplo de resultados
-
-```kotlin
-
-Suma total secuencial: 5,000,000
-Tiempo secuencial: 150 ms
-
-Suma total paralela (corrutinas): 5,000,000
-Tiempo paralelo (corrutinas): 80 ms
-
-Suma total paralela (ForkJoin): 5,000,000
-Tiempo paralelo (ForkJoin): 60 ms
-```
-- Secuencial: tomó 150 ms, el tiempo más alto debido a la falta de paralelización.
-- Corrutinas: redujeron el tiempo a 80 ms, mostrando una mejora significativa en comparación con el método secuencial.
-- ForkJoinPool: fue el método más rápido (60 ms), mostrando que aprovecha mejor los recursos del sistema para listas grandes.
 ### Conclusión
 
 Secuencial: Suficiente para listas pequeñas. <br>
