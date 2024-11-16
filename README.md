@@ -214,9 +214,13 @@ sistema.eliminar_usuario("Carlos", "Luna")
 
 sistema.listar_usuarios("Paula")  
 ```
-## Análisis de Comparación de Tiempos
+## Análisis codigo
 
-### Implementación Secuencial:
+El codigo es algo distinto a lo pedido pero llega a ser mas enfocado a un sistema de vida real ya que lo que hago es crear usuarios con diferentes tipos de cargos dentro del entorno . 
+
+Tengo tanto a un usuario comun el cual no cuenta con acciones dentro del sistema mas que existir y tengo al usuario admin el cual tiene las capacidades de agregar a un usurio o de eliminarlo del sistema .
+
+### codigo 
 
 Este método recorre toda la lista de números y suma cada elemento de manera secuencial.
 Este método actúa como un punto de referencia. Como es secuencial, su tiempo de ejecución será el más alto en la mayoría de los casos, especialmente para listas grandes (1,000,000 de elementos en este caso).
