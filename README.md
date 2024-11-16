@@ -22,6 +22,7 @@
 memoria
 
    Justificacion : 
+   
 Los problemas de la rprogrmacion orientada a objetos y iterativa es que son debiles en la utilizacion de memoria y en la seguridad que pueden tener sus sistemas en cuestion de carga de datos .
 
 Para poder gestionar esos aspectos en la programacion orientada a eventos es necesario el agregar mas clases y objetos los cuales implican mas gestion y modificacion para mantener la aplicacion .
@@ -140,95 +141,78 @@ Para poder gestionar esos aspectos en la programacion orientada a eventos es nec
    Justificacion : 
 
    - El tejedor se basa de manera concisa en el procedimiento que se utiliza el codigo fuente o codigo base del programa con los diferentes aspectos que se creen . Crea puntos de interes o tambien llamadas preocupaciones en problemas transversales los cuales buscan otra solucion .
+
    
-
- 
-
-     
-   En un servidor web que maneja un alto volumen de solicitudes de usuarios, el balanceo de carga es esencial para distribuir las solicitudes entre múltiples procesadores o servidores. Si una parte del sistema se sobrecarga mientras otras están inactivas, el tiempo de respuesta aumentará y los usuarios experimentarán retrasos. El balanceo de carga garantiza que todas las solicitudes se distribuyan de manera equitativa, optimizando los tiempos de respuesta y utilizando los recursos de manera eficiente.
-
-
-
-   - Latencia: es el tiempo que tarda en iniciarse una comunicación entre hilos o procesos. Alta latencia puede afectar negativamente al rendimiento en sistemas paralelos, especialmente en aplicaciones que requieren comunicación frecuente.
-   - Ancho de banda: es la cantidad de datos que pueden transferirse en un periodo determinado. Un bajo ancho de banda limita la cantidad de información que puede compartirse rápidamente, afectando el rendimiento en aplicaciones que requieren grandes volúmenes de datos entre hilos o nodos de procesamiento.
-
-
-   - Sincronización y condiciones de carrera: los accesos concurrentes a datos compartidos pueden causar errores. Para mitigarlo, se utilizan técnicas de sincronización como bloqueos y semáforos.
-   - Overhead de comunicación: el tiempo y recursos necesarios para coordinar hilos o procesos pueden reducir el rendimiento. Para reducir el overhead, se puede optimizar la comunicación y limitar la creación y sincronización de hilos.
-   - Balanceo de carga: es difícil distribuir equitativamente las tareas en todos los núcleos. Algoritmos de balanceo de carga dinámico ayudan a mantener una distribución equitativa.
-   - Escalabilidad: asegurar que el sistema pueda manejar el incremento de tareas y procesadores. Se puede mitigar utilizando arquitecturas de sistema escalables y protocolos de comunicación eficientes.
-   - Deadlocks y bloqueos: para evitarlos, se utilizan técnicas de prevención y resolución de deadlocks, como los time-outs y el orden en la asignación de recursos.
 
 ### Ejercicio de implementación 
 
+
+
 ```python 
-import kotlinx.coroutines.*
-import java.util.concurrent.RecursiveTask
-import java.util.concurrent.ForkJoinPool
-import kotlin.system.measureTimeMillis
+class SistemaUsuarios:
+    def __init__(self):
+        # Lista de usuarios permitidos
+        self.usuarios_permitidos = ["Jhonatan", "Miguel", "Paula", "Edgar"]
 
-// Implementación secuencial
-fun sumList(numbers: List<Int>): Int {
-    var sum = 0
-    for (number in numbers) {
-        sum += number
-    }
-    return sum
-}
+    def decorador_seguridad(func):
+        def wrapper(self, usuario, *args):
+            if usuario in self.usuarios_permitidos:
+                return func(self, usuario, *args)
+            else:
+                print(f"Acceso denegado para: {usuario}")
+                return None
+        return wrapper
 
-// Implementación paralela usando corrutinas
-fun sumListParallelCoroutine(numbers: List<Int>): Int = runBlocking {
-    val chunkSize = numbers.size / 4  // Dividir la lista en 4 partes
-    val deferredResults = (0 until 4).map { i ->
-        async {
-            numbers.subList(i * chunkSize, (i + 1) * chunkSize).sum()
-        }
-    }
-    deferredResults.awaitAll().sum() // Esperar a todas las corrutinas y sumar los resultados
-}
+    @decorador_seguridad
+    def iniciar_sesion(self, usuario):
+        print(f"Bienvenido, has iniciado sesión como: {usuario}")
 
-// Implementación paralela usando ForkJoinPool
-class SumTask(private val numbers: List<Int>, private val start: Int, private val end: Int) : RecursiveTask<Int>() {
-    override fun compute(): Int {
-        return if (end - start <= 250_000) {  // Tamaño mínimo para dividir
-            numbers.subList(start, end).sum()
-        } else {
-            val mid = (start + end) / 2
-            val leftTask = SumTask(numbers, start, mid)
-            val rightTask = SumTask(numbers, mid, end)
-            leftTask.fork()  // Ejecutar la tarea izquierda en paralelo
-            rightTask.compute() + leftTask.join()  // Combinar resultados
-        }
-    }
-}
+    @decorador_seguridad
+    def agregar_usuario(self, admin, nuevo_usuario):
+        # Solo los administradores pueden agregar usuarios
+        if admin in self.usuarios_permitidos:
+            if nuevo_usuario not in self.usuarios_permitidos:
+                self.usuarios_permitidos.append(nuevo_usuario)
+                print(f"Usuario '{nuevo_usuario}' agregado correctamente por {admin}.")
+            else:
+                print(f"El usuario '{nuevo_usuario}' ya existe.")
+        else:
+            print(f"{admin} no tiene permiso para agregar usuarios.")
 
-fun sumListParallelForkJoin(numbers: List<Int>): Int {
-    val pool = ForkJoinPool()
-    val task = SumTask(numbers, 0, numbers.size)
-    return pool.invoke(task)
-}
+    @decorador_seguridad
+    def eliminar_usuario(self, admin, usuario_a_eliminar):
+        if admin in self.usuarios_permitidos:
+            if usuario_a_eliminar in self.usuarios_permitidos:
+                self.usuarios_permitidos.remove(usuario_a_eliminar)
+                print(f"Usuario '{usuario_a_eliminar}' eliminado correctamente por {admin}.")
+            else:
+                print(f"El usuario '{usuario_a_eliminar}' no existe.")
+        else:
+            print(f"{admin} no tiene permiso para eliminar usuarios.")
 
-fun main() {
-    val numbers = List(1_000_000) { (1..10).random() }
+    @decorador_seguridad
+    def listar_usuarios(self, usuario):
+        print("Usuarios permitidos:", self.usuarios_permitidos)
 
-    // Ejecución secuencial
-    val timeSequential = measureTimeMillis {
-        println("Suma total secuencial: ${sumList(numbers)}")
-    }
-    println("Tiempo secuencial: $timeSequential ms")
 
-    // Ejecución paralela con corrutinas
-    val timeParallelCoroutine = measureTimeMillis {
-        println("Suma total paralela (corrutinas): ${sumListParallelCoroutine(numbers)}")
-    }
-    println("Tiempo paralelo (corrutinas): $timeParallelCoroutine ms")
+sistema = SistemaUsuarios()
 
-    // Ejecución paralela con ForkJoinPool
-    val timeParallelForkJoin = measureTimeMillis {
-        println("Suma total paralela (ForkJoin): ${sumListParallelForkJoin(numbers)}")
-    }
-    println("Tiempo paralelo (ForkJoin): $timeParallelForkJoin ms")
-}
+sistema.iniciar_sesion("Paula")  
+sistema.iniciar_sesion("Carlos")  
+
+
+sistema.agregar_usuario("Paula", "Carlos") 
+sistema.agregar_usuario("Carlos", "Luna")   
+
+
+sistema.listar_usuarios("Paula")  
+
+
+sistema.eliminar_usuario("Paula", "Carlos")  # Usuario 'Carlos' eliminado correctamente por Paula.
+sistema.eliminar_usuario("Carlos", "Luna")   # Carlos no tiene permiso para eliminar usuarios.
+
+
+sistema.listar_usuarios("Paula")  # Usuarios permitidos: ['Jhonatan', 'Miguel', 'Paula', 'Edgar']
 ```
 ## Análisis de Comparación de Tiempos
 
